@@ -37,12 +37,15 @@
                 var currLat = position.coords.latitude;
                 var currLong = position.coords.longitude;
                 
+                var ip = prompt("Enter server IP address","192.168.");
+                var id = device.uuid;
+                
 //                var element = document.getElementById('geolocation');
 //                element.innerHTML = 'Lat: ' + currLat  + '<br />'
 //                                  + 'Long" ' + currLong;
                                   
                 //Build URL for redirect to include current latitude/longitude
-                var urlString = 'http://wae.homedns.org/svctrak/index.a5w?latitude=' 
+                var urlString = 'http://'+ip+'/svctrak/index.a5w?latitude=' 
                                 + currLat +'&longitude=' + currLong;
                 //go there
                 window.location.href = urlString;
