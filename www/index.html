@@ -46,7 +46,8 @@
                                   
                 //Build URL for redirect to include current latitude/longitude
                 var urlString = 'http://'+ip+'/svctrak/index.a5w?latitude=' 
-                                + currLat +'&longitude=' + currLong;
+                                + currLat +'&longitude=' + currLong
+                                + '&uuid=' + id;
                 alert('headed to: ' + urlString);
                 //go there
                 window.location.href = urlString;
