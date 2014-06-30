@@ -36,10 +36,10 @@
             function onSuccess(position) {
                 var currLat = position.coords.latitude;
                 var currLong = position.coords.longitude;
+                var id = device.uuid;
                 
                 var ip = prompt("Enter server IP address","192.168.");
-                //var id = device.uuid;
-                var id = 'testingUUID';
+                
 //                var element = document.getElementById('geolocation');
 //                element.innerHTML = 'Lat: ' + currLat  + '<br />'
 //                                  + 'Long" ' + currLong;
